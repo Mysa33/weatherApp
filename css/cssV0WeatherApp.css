@@ -1,0 +1,46 @@
+/*CSS weather App*/
+
+
+/*************************************
+*
+*    Index
+*
+*************************************/
+
+/**************
+*
+* 1-Header
+*
+**************/
+
+*{
+    
+    font-family: 'Open Sans';
+}
+
+h1,h2,h3,h4,h5,h6 {
+    
+    color:#FFF;
+    
+}
+
+/**************
+*
+* 2-Header
+*
+**************/
+
+.custom-cont{
+    
+    width: 450px;
+    height: 600px;
+    margin-top:150px;
+    background-color:#9575cd;
+    
+}
+
+.txt-top header{
+    
+    margin-top:30px;
+    float:left;
+}

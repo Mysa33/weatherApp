@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Weather App</title>
+        
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/docLoadJson.js"></script>
+    <!--CSS Bootstrap-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/weathericons.css" />
+    <link rel="stylesheet" href="css/v0WeatherApp.css" />
+    
+  </head>
+
+  <body>
+    
+     <!--.container--><!--.custom-cont-->  
+     <div class="container custom-cont">
+       <!--.row-->
+       <div class="row">
+           <!--.col-md-12--><!--.txt-top-->
+           <div class="col-md-12 txt-top">
+               
+               <header><h4><stong>Sélectionner votre ville</stong></h4></header>
+               
+           </div>
+           <!--/.col-md-12--><!--/.txt-top-->
+           
+       </div>
+       <!--/.row-->    
+       <!--.row-->    
+       <div class="row">
+           
+                      
+           <div class="col-md-12">
+               
+               <select id="selec" class="mySelec">
+
+
+
+                   
+               </select>
+               
+           </div>
+           
+                 
+       </div>
+       <!--/.row-->
+       
+       <!--.row--><!--Preloader-->
+
+       <div id="rowPreloader" class="row">
+
+          <div class="col-md-12 preloader">
+
+              <div align="center">
+
+                  <i class="fa fa-spinner fa-5x"></i>
+
+              </div>
+
+          </div>
+
+       </div>
+
+       <!--/.row--><!--Fin row preloader-->
+
+       <!--.row-->
+       <div id="cityName" class="row">
+          
+           
+       </div>          
+       <!--/.row-->
+       
+       <!--.row--><!--today icon-->
+       <div  class="row">
+          
+          <div id="iconWeather" class="col-md-12">
+           
+                 
+              
+          </div>
+          <!--today temp-->
+          <div id="cTemp" class="col-md-12">
+          
+                   
+              
+          </div>
+          
+                      
+       </div>          
+       <!--/.row-->
+       
+       <!--.row--><!---->
+       <div id="nextWeather" class="row nDays">
+           
+           
+           
+       </div>
+       <!--/.row-->
+       
+       <!--.row-->
+       <div id="nextIcons" class="row rowTempForcast" align="center">
+           
+                  
+           
+       </div>
+       <!--/.row-->
+       
+       
+       <!--.row-->
+       <div id="nextMax" class="row rowTempForcast" align="center"> 
+           
+           
+           
+       </div>
+       <!--/.row-->
+       
+       <!--.row-->
+       <div id="nextMin" class="row rowTempForcast" align="center">
+           
+           
+           
+       </div>
+       <!--/.row-->     
+         
+     </div>
+     <!--/.container--><!--/.custom-cont-->
+     
+     
+    
+  </body>
+
+</html>

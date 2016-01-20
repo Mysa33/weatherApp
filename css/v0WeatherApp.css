@@ -1,0 +1,338 @@
+/*CSS weather App*/
+
+
+/*************************************
+*
+*   Index
+*0- Preloder
+*1- Global
+*2- Header
+*3- Select
+*4- Curent
+*5- Forcast
+*6- Responsive
+*
+*************************************/
+/**************
+*
+* 0-Preloader
+*
+**************/
+
+#rowPreloader{
+    
+    margin-top:20px;
+}
+
+.preloader i{
+    
+    color:#FFF;
+    -webkit-animation:spin 4s linear infinite;
+    -moz-animation:spin 4s linear infinite;
+    animation:spin 4s linear infinite;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+    
+
+
+
+/**************
+*
+* 1-Global
+*
+**************/
+
+*{
+    font-family: 'Open Sans';
+
+    
+}
+
+h1,h2,h3,h4,h5,h6 {
+    
+    
+    color:#FFF;
+    
+}
+
+/**************
+*
+* 2-Header
+*
+**************/
+
+.txt-top header{
+    
+    margin-top:30px;
+    float:left;
+}
+
+/**************
+*
+* 3-Select
+*
+**************/
+
+.mySelec{
+    
+    width: 100%;
+    height:40px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    /*-webkit-appearance: none;*/ /*Je n'ai pas eu le temps de bien finaliser*/
+    
+}
+
+/**************
+*
+* 4-Curent
+*
+**************/
+
+/*******
+*4.1 City name
+*******/
+
+.cityName{
+    
+    margin-left:10%;
+    margin-right:10%;
+    margin-top: 5%;
+    width: 80%;
+    height: 40px;
+    text-align: center;
+    background-color:#7e57c2;
+    
+}
+/*******
+*4.1 Icon
+*******/
+
+.iconCustom{
+  
+  padding-left:35%;
+  padding-right: 35%;
+  padding-top:10%;
+  font-size: 96px;
+  color: #FFF;
+  font-weight: 400;
+  line-height: 96px;
+}
+
+/*******
+*4.2 Temp
+*******/
+  
+.curTemp{
+    
+  padding-left:40%;
+  padding-right: 40%;
+    
+}    
+
+/**************
+*
+* 5-Forcast
+*
+**************/
+.nDays{
+    
+    margin-left:10%;
+    margin-right:10%;
+    background-color:#7e57c2;
+}
+
+
+
+.nextDays{
+    
+    width:33%;
+    height:30px;
+    font-weight: 400;
+    text-align: center;
+    
+}
+
+.rowTempForcast{
+
+    margin-left:10%;
+    margin-right:10%;
+
+}
+
+.forcastTemp {
+    
+    width:33%;
+    height:30px;
+    font-size: 28px;
+    text-align: center;
+}
+
+.fortcastIcons {
+    
+    margin-top: 5%;
+    font-size: 28px;
+    text-align: center;/*utile pour une V1 avec la description*/
+    color:#FFF;
+}
+/**************
+*
+* 5-Responsive
+*
+**************/
+
+@media screen and (min-width: 960px) and (max-width: 1920px) {
+
+.custom-cont{
+    
+    width: 450px;
+    height: 550px;
+    margin-top:150px;
+    background-color:#9575cd;
+    
+}
+
+.nextDays{
+    
+    display: inline-block;
+    width:33%;
+    height:30px;
+    font-weight: 400;
+    text-align: center;
+    
+}
+
+.forcastTemp {
+    
+    display: inline-block;
+    width:33.33%;
+    height:30px;
+    font-size: 28px;
+    text-align: center;
+}
+
+.colRemove{
+
+    display: inline-block;
+    width:33.33%;
+}
+
+}
+
+@media screen and (min-width: 750px) and (max-width: 960px) {
+
+.custom-cont{
+    
+    width: 450px;
+    height: 550px;
+    margin-top:150px;
+    background-color:#9575cd;
+    
+}
+
+.nextDays{
+    
+    display: inline-block;
+    width:33.33%;
+    height:30px;
+    font-weight: 400;
+    text-align: center;
+    
+}
+.forcastTemp {
+    
+    display: inline-block;
+    width:33.33%;
+    height:30px;
+    font-size: 28px;
+    text-align: center;
+}
+
+.colRemove{
+
+    display: inline-block;
+    width:33.33%;
+}
+
+
+}
+
+@media screen and (min-width: 400px) and (max-width: 750px) {
+
+.custom-cont{
+    
+    width: 80%;
+    height: 550px;
+    margin-top:150px;
+    background-color:#9575cd;
+    
+}
+
+.nextDays{
+    
+    display: inline-block;
+    width:33.33%;
+    height:30px;
+    font-weight: 400;
+    text-align: center;
+    
+}
+.forcastTemp {
+    
+    display: inline-block;
+    width:33.33%;
+    height:30px;
+    font-size: 28px;
+    text-align: center;
+}
+
+.colRemove{
+
+    display: inline-block;
+    width:33.33%;
+}
+
+
+}
+
+@media screen and (min-width: 200px) and (max-width: 400px) {
+
+.custom-cont{
+    
+    width: 80%;
+    height: 550px;
+    margin-top:150px;
+    background-color:#9575cd;
+    
+}
+
+
+.nextDays{
+    
+    display: inline-block;
+    width:33.33%;
+    height:30px;
+    font-weight: 400;
+    text-align: center;
+    
+}
+.forcastTemp {
+    
+    display: inline-block;
+    width:33.33%;
+    height:30px;
+    font-size: 28px;
+    text-align: center;
+}
+
+.colRemove{
+
+    display: inline-block;
+    width:33.33%;
+}
+
+
+
+}
